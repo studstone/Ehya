@@ -77,6 +77,9 @@
     .blog
         &-main
             max-width: 380px
+    .stock
+        &-wrapper
+            padding: 60px 5px 80px 5px
 
 @media (max-width: 992px)
     .container
@@ -187,6 +190,20 @@
                 line-height: 24px
             &__img
                 justify-content: start
+    .stock
+        &-wrapper
+            padding-top: 26px
+            padding-bottom: 28px
+            flex-direction: column
+            align-items: start
+            &::after
+                top: 0
+                right: 0
+            &::before
+                top: 57px
+        &__title
+            margin-bottom: 32px
+            width: 100%
 
 @media (max-width: 767px)
     .container
@@ -664,9 +681,11 @@
             &__icon
                 max-width: 99px
     .blog
+        padding-bottom: 48px
         &__top
             order: 2
             justify-content: center
+            margin-bottom: 0
         &__title
             display: none
         &__subtitle   
@@ -746,3 +765,35 @@
                     
                 &--next
                     right: 146px
+    .stock
+        &-container
+            max-width: 100%
+            background-color: #1565D8
+            object-fit: cover
+        &-wrapper
+            padding-right: 0
+            padding-left: 0
+            border-radius: 0
+            background-color: #1565D8
+            &::after
+                display: none
+            &::before
+                display: none
+        &__title
+            font-size: 28px
+            line-height: 36px
+    .subscribe
+        width: 272px
+        min-height: 112px
+        margin-right: 8px
+        &__input
+            min-height: 112px
+            padding-right: 0
+            padding-top: 17px
+            padding-bottom: 73px
+        &__button
+            top: 58px
+            left: 11px
+            width: 250px
+            padding-top: 10px
+            padding-bottom: 10px

@@ -9,7 +9,8 @@
     display: flex
     align-items: center
     justify-content: space-between
-    //&::after
+    overflow: hidden
+    &::before
       content: ''
       position: absolute
       right: 8px
@@ -18,17 +19,15 @@
       background-repeat: no-repeat
       width: 1186px
       height: 1186px
-      z-index: -1
-    //&::before
+    &::after
       content: ''
       position: absolute
-      left: 62px
-      top: 13px
+      right: -528px
+      top: -1px
       background-image: url(../image/oval-2.svg)
       background-repeat: no-repeat
       width: 1186px
       height: 1186px
-      z-index: -1
   &__title
     font-family: 'Roboto Condensed', sans-serif
     font-style: normal
@@ -43,6 +42,7 @@
   position: relative
   width: 447px
   min-height: 56px
+  z-index: 5
   label
     width: 100%
   &__input
@@ -66,14 +66,15 @@
     height: 48px
     border: none
     background-color: #FAAD13
-    color: $light
+    font-family: "Open Sans", sans-serif
     font-style: normal
-    font-weight: bold
-    font-size: 12px
-    line-height: 15px
-    cursor: pointer
+    font-weight: 700
+    font-size: 16px
+    line-height: 22px
+    text-align: center
     border-radius: 4px 
     z-index: 2
+    color: #FFFFFF
   &__icon 
     position: absolute
     width: 16px
