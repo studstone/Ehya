@@ -46,6 +46,13 @@ $(document).ready(function () {
       },
     },
   });
+  $(".subscribe").validate({
+    errorClass: "invalid-1",
+    email: {
+      required: "We need your email address to contact you",
+      email: "Your email address must be in the format of name@domain.com",
+    },
+  });
   $(function () {
     $(".goods-card__svg").click(function () {
       $(this).siblings("goods-card__svg").toggle();
