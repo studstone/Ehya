@@ -1,0 +1,90 @@
+.categories
+    padding-bottom: 100px
+    &-container
+        position: relative
+
+        &__button
+            position: absolute
+            top: 60%
+            transform: translateY(-50%)
+            z-index: 99
+            width: 56px
+            height: 56px
+            border: none
+            cursor: pointer
+            background-repeat: no-repeat
+            background-position: center
+            background-size: 10px
+            background-color: #FFFFFF
+            box-shadow: 0px 12px 16px rgba(0, 0, 0, 0.08)
+            border-radius: 2000px
+
+            &--next
+                right: -28px
+                background-image: url(../image/arrow-right.svg)
+
+            &--prev
+                left: -28px
+                background-image: url(../image/arrow-left.svg)
+
+    &__line
+        width: 100%
+        size: 1px
+        color: #ECEEF2
+        margin-bottom: 58px
+        margin-top: 0
+
+    &-swiper
+        max-width: 100%
+        min-height: 240px
+
+    &-wrapper
+        &__icon
+            margin-top: 40px
+
+        &__link
+            max-width: 100%
+            min-height: 240px
+            display: flex
+            flex-direction: column
+            align-items: center
+            text-decoration: none
+            border-radius: 8px
+
+        &__item
+            margin-right: 26px
+
+    &-slide
+        max-width: 265px
+        min-height: 240px
+        border: 1px solid #ECEEF2
+        box-sizing: border-box
+        border-radius: 8px
+
+        &__title
+            font-family: "Roboto", sans-serif
+            font-style: normal
+            font-weight: 500
+            font-size: 22px
+            line-height: 32px
+            text-align: center
+            letter-spacing: 0.2px
+            color: #183B56
+            margin-top: 40px
+            margin-bottom: 12px
+
+        &__type
+            font-family: "Open Sans", sans-serif
+            font-style: normal
+            font-weight: 400
+            font-size: 16px
+            line-height: 22px
+            text-align: center
+            color: #5A7184
+
+.disabled
+    &-swiper
+        &__button
+            opacity: 0
+            cursor: auto
+            pointer-events: none

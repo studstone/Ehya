@@ -1,0 +1,744 @@
+@media (min-width: 991px)
+    .button
+        &:hover
+            background-color: #5f77e2
+
+    a
+        &:hover
+            color: #889cf5
+
+    .book
+        &-button
+            &__link
+                &:hover
+                    background-color: #5f77e2
+
+    .goods
+        &-recommendations
+            &__link
+                &:hover
+                    background-color: #5f77e2
+                    object-fit: cover
+    .blog
+        &__link
+            &:hover
+                background-color: #5f77e2
+
+    .categories
+        &-wrapper
+            &__link
+                &:hover
+                    background-color: #cccccc
+                    object-fit: cover
+
+@media (max-width: 1200px)
+    .container
+        max-width: 960px
+
+    .book
+        &-description
+            max-width: 469px
+
+        &-wrapper
+            min-width: 421px
+            min-height: 580px
+
+    .goods
+        &-recommendations
+            max-width: 465px
+
+            &__card
+                width: 100%
+
+                &--mr
+                    display: none
+
+            &__card-left
+                width: 250px
+
+            &__card-right
+                width: 193px
+
+        &-best
+            max-width: 465px
+
+            &__card
+                width: 390px
+
+            &__card-left
+                width: 145px
+
+            &__card-right
+                width: 225px
+    .blog
+        &-main
+            max-width: 380px
+
+@media (max-width: 992px)
+    .container
+        max-width: 700px
+
+    .book
+        &-info
+            flex-direction: column
+
+        &-description
+            max-width: 100%
+
+            &__title
+                width: 443px
+                height: 180px
+
+            &__title
+                margin-top: 0
+
+        &-button
+            max-width: 100%
+
+            &__buy
+                flex-basis: 48%
+
+            &__link
+                max-width: 48%
+
+        &__wrapper
+            min-width: 100%
+            margin-top: 56px
+
+    .goods
+        &-recommendations
+            max-width: 340px
+
+            &__card
+                width: 100%
+
+            &__card-left
+                width: 50%
+
+            &__card-right
+                width: 47%
+
+        &-best
+            max-width: 340px
+
+            &__wrapper
+                padding: 24px 10px 26px 10px
+
+            &__card
+                width: 100%
+
+            &__card-left
+                width: 41%
+
+            &__card-right
+                width: 57%
+
+    .stories
+        padding: 44px 0 19px
+
+        &-header
+            flex-direction: column
+
+            &__title
+                margin: 0
+                max-width: 100%
+
+            &__text
+                max-width: 100%
+                margin-top: 24px
+                margin-bottom: 33px
+
+        &-video
+            &__item
+                width: 340px
+                margin: 0
+
+                &--big
+                    width: 100%
+
+                &--hidden
+                    display: none
+
+            &__player
+                &--litle
+                    width: 340px
+
+    .categories
+        &-slide
+            max-width: 330px
+    .blog
+        &-info
+            flex-direction: column
+            justify-content: start
+            &__main
+                margin-bottom: 28px
+        &-main
+            max-width: 100%
+
+            //&__type
+                font-size: 16px
+                line-height: 20px
+            //&__text
+                font-size: 12px
+                line-height: 24px
+            &__img
+                justify-content: start
+
+@media (max-width: 767px)
+    .container
+        max-width: 576px
+
+    body
+        padding-top: 64px
+
+    .header
+        padding-top: 18px
+        padding-bottom: 18px
+
+        &--mobile
+            &-fixed
+                position: fixed
+                left: 0
+                top: 0
+                right: 0
+                z-index: 99
+
+        &-navigation
+            display: none
+
+            &--visible
+                display: flex
+                flex-direction: column
+                align-items: center
+                justify-content: space-between
+                margin: auto
+                width: 100%
+
+        &-menu
+            flex-direction: column
+
+            &__item
+                margin-bottom: 15px
+
+        &__button
+            background-color: #d4d4d4
+
+        &-top
+            &__menu
+                &-button
+                    display: flex
+                    width: 22px
+                    height: 17.7px
+                    padding: 0
+                    align-items: center
+                    justify-content: space-between
+                    flex-direction: column
+                    border: none
+                    background-color: $light
+
+        &-bottom
+            display: none
+            position: fixed
+            left: 0
+            right: 0
+            bottom: 0
+            top: 64px
+            padding-top: 31px
+            z-index: 99
+
+            &--visible
+                display: block
+                overflow-x: auto
+
+    .book
+        padding-top: 36px
+        padding-bottom: 56.21px
+
+    .goods
+        &__title
+            margin-bottom: 73px
+            text-align: center
+
+            &--mb
+                margin-bottom: 36px
+
+        &-wrapper
+            flex-direction: column
+
+        &-recommendations
+            max-width: 100%
+            min-height: 0
+            position: relative
+
+            &__wrapper
+                width: 100%
+
+            &__card
+                &--mobili
+                    &-none
+                        display: none
+
+                    &-visible
+                        display: flex
+                        flex-direction: column
+                        justify-content: center
+                        margin-right: 0
+                        padding-top: 0
+
+            &__card-left
+                width: 100%
+                margin-bottom: 18.91px
+                position: absolute
+                top: 77px
+
+            &__card-right
+                width: 100%
+                align-items: center
+                margin-top: 220px
+
+        &-card
+            &__buy
+                margin-right: 19.7px
+
+        &-best
+            padding-top: 56px
+            max-width: 100%
+
+    .stories
+        &-video
+            &__item
+                width: 270px
+                margin: 0
+
+                &--big
+                    width: 100%
+                    height: 350px
+
+            &__player
+                &--litle
+                    width: 270px
+
+    .categories
+        padding-bottom: 59px
+        &-slide
+            max-width: 280px
+
+        &-wrapper
+            &__item
+                margin-right: 10px
+    .partners
+        padding-bottom: 56px
+        &-container
+            min-height: 214px
+            padding-top: 37px
+            padding-bottom: 57px
+        &-wrapper
+            min-height: 120px
+        &__title
+            line-height: 30px
+        &-top
+            &__icon
+                max-width: 85px
+        &-bottom
+            display: none
+
+@media (max-width: 576px)
+    .container
+        max-width: 280px
+
+    .book
+        &-description
+            &__title
+                font-style: normal
+                font-weight: bold
+                font-size: 32px
+                line-height: 40px
+                text-align: center
+                letter-spacing: 0.2px
+                width: 280px
+                height: 160px
+
+            &__book
+                &-name
+                    font-style: normal
+                    font-weight: normal
+                    font-size: 16px
+                    line-height: 24px
+                    margin-top: 24px
+                    margin-bottom: 32px
+                    text-align: center
+                    width: 100%
+
+            &__text
+                font-style: normal
+                font-weight: normal
+                font-size: 16px
+                line-height: 23px
+                text-align: center
+                margin-bottom: 17px
+
+        &-button
+            width: 176px
+            flex-direction: column
+            margin: auto
+
+            &__buy
+                width: 100%
+                min-height: 40px
+                margin-bottom: 15px
+
+            &__link
+                max-width: 100%
+                padding: 7px 0 7px 0
+                font-style: normal
+                font-weight: bold
+                font-size: 16px
+                line-height: 22px
+
+        &-wrapper
+            min-width: 280px
+            min-height: 332.79px
+
+            &__img
+                width: 143.44px
+                height: 214.59px
+
+        &__wrapper
+            margin-top: 36px
+
+    .popup
+        padding: 15px 10px
+
+    .goods
+        padding-bottom: 49px
+
+        &__title
+            font-size: 28px
+            line-height: 36px
+
+        &-wrapper
+
+        &-recommendations
+            &__wrapper
+
+            &__card
+                &--mobili
+                    &-visible
+                        padding: 0
+                        margin-bottom: 25px
+
+            &__card-left
+                width: 93px
+                min-height: 95px
+                top: 84px
+                left: 94px
+
+            &__card-right
+                margin-top: 130px
+                min-height: 179px
+
+            &__link
+                font-size: 16px
+                line-height: 20px
+                padding: 14px 0 14px 0
+                text-transform: none
+
+        &-card
+            &__title
+                font-size: 20px
+                line-height: 24px
+                margin-bottom: 12px
+
+                &--litle
+                    font-family: "Roboto Condensed", sans-serif
+                    font-style: normal
+                    font-weight: bold
+                    font-size: 16px
+                    line-height: 24px
+
+            &__type
+                font-size: 14px
+                line-height: 20px
+                margin-bottom: 16px
+
+            &__price
+                margin-bottom: 14px
+
+                &--litle
+                    font-size: 16px
+                    line-height: 20px
+                    padding-right: 8px
+                    margin-bottom: 19px
+
+            &__bottom
+                max-width: 163px
+
+            &__buy
+                &--big
+                    width: 115px
+
+        &-best
+            min-height: 0
+
+            &__card
+                margin-bottom: 0.5px
+
+                &:nth-child(4)
+                    margin-bottom: 21.5px
+
+            &__wrapper
+                padding-top: 7px
+
+            &__card-left
+                width: 96px
+                min-height: 144px
+
+            &__card-right
+                width: 58%
+                padding-top: 10px
+
+            &__link
+                padding-top: 19px
+
+    .stories
+        &-container
+            max-width: 300px
+
+        &-wrapper
+            min-height: 680px
+
+        &-header
+            align-items: center
+
+            &__title
+                font-family: "Roboto Condensed", sans-serif
+                font-style: normal
+                font-weight: bold
+                font-size: 28px
+                line-height: 36px
+                text-align: center
+                letter-spacing: 0.2px
+
+            &__text
+                font-family: "Open Sans", sans-serif
+                font-style: normal
+                font-weight: normal
+                font-size: 18px
+                line-height: 25px
+                text-align: center
+
+        &-video
+            min-height: 486px
+
+            &__item
+                width: 140px
+                height: 230px
+                margin: 0
+
+                &--big
+                    width: 100%
+                    height: 210px
+
+            &__player
+                &--litle
+                    width: 140px
+                    height: 138px
+
+            &__info
+                flex-direction: column
+                align-items: center
+                margin-top: 10px
+
+            &__author
+                font-style: normal
+                font-weight: 500
+                font-size: 16px
+                line-height: 20px
+                text-align: center
+                letter-spacing: 0.2px
+
+            &__type
+                font-style: normal
+                font-weight: normal
+                font-size: 12px
+                line-height: 20px
+                text-align: center
+                color: #5A7184
+                margin-bottom: 16px
+
+            &__icon
+                width: 10px
+                height: 14px
+
+    .categories
+        padding-bottom: 60px
+        &-container
+            min-height: 462px
+
+            &__button
+                top: 105%
+                width: 48px
+                height: 48px
+
+                &--next
+                    right: 83px
+                    background-image: url(../image/arrow-right.svg)
+
+                &--prev
+                    left: 83px
+                    background-image: url(../image/arrow-left.svg)
+
+        &__line
+            margin-bottom: 55px
+
+        &-wrapper
+            display: flex
+            flex-wrap: wrap
+
+            &__icon
+                width: 36px
+                height: 36px
+                margin-top: 0
+
+            &__link
+                padding: 20px 14px
+                min-height: 182px
+
+            &__item
+                margin-right: 10px
+
+                &--mr
+                    margin-right: 0
+
+                &--mb
+                    margin-bottom: 10px
+
+        &-slide
+            max-width: 135px
+            min-height: 182px
+
+            &__title
+                font-family: "Roboto Condensed", sans-serif
+                font-style: normal
+                font-weight: 700
+                font-size: 16px
+                line-height: 20px
+                text-align: center
+                margin-top: 16px
+                margin-bottom: 10px
+
+            &__type
+                font-style: normal
+                font-weight: 400
+                font-size: 12px
+                line-height: 20px
+
+        &__button
+            top: 105%
+            width: 48px
+            height: 48px
+
+            &--next
+                right: -83px
+                background-image: url(../image/arrow-right.svg)
+
+            &--prev
+                left: -83px
+                background-image: url(../image/arrow-left.svg)
+    .partners
+        &-container
+            min-height: 344px
+            padding-top: 37px
+            padding-bottom: 57px
+        &-wrapper
+            min-height: 250px
+        &__title
+            line-height: 30px
+        &-top
+            max-width: 219px
+            min-height: 131px
+            &__icon
+                max-width: 99px
+    .blog
+        &__top
+            order: 2
+            justify-content: center
+        &__title
+            display: none
+        &__subtitle   
+            display: block
+            text-align: center
+        &__link
+            font-size: 14px
+            letter-spacing: 0.175px
+            max-width: 159px
+            margin-top: 37px
+            padding: 10px 0
+
+        &-info
+            &__main
+                margin-bottom: 28px
+        &-main
+            &__type
+                font-size: 16px
+                line-height: 20px
+            &__text
+                font-size: 12px
+                line-height: 24px
+                margin-top: 12px
+            &__icon
+                width: 280px
+                height: 120px
+                border-radius: 4px
+            &__img
+                margin-bottom: 19px
+
+        &-secondary
+            &__variant
+                margin-bottom: 29px
+                &--mb
+                    margin-bottom: 0
+
+            &__left
+                max-width: 90px
+                min-height: 90px
+            &__right
+                margin-left: 19px
+                max-width: 171px
+                padding: 0
+            &__data
+                font-weight: 400
+                font-size: 10px
+                line-height: 20px
+                margin-bottom: 5.9px
+            &__type
+                font-size: 14px
+                line-height: 20px
+                letter-spacing: 0.175px
+                margin-bottom: 6.14px
+            &__link
+                font-size: 10px
+                line-height: 20px
+                letter-spacing: 0.125px
+            &__img
+                border-radius: 4px
+    .unreleased
+        padding-top: 49px
+        &-container
+            padding: 48px 0 0
+        &-wrapper
+            padding-bottom: 109px
+        &-swiper
+            &__title
+                margin-top: 0
+                font-size: 28px
+                line-height: 37px
+                text-align: center
+                margin-bottom: 36px
+            &__button
+                top: 441px
+                &--prev
+                    right: 80px
+                    
+                &--next
+                    right: 146px
