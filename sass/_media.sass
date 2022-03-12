@@ -204,6 +204,19 @@
         &__title
             margin-bottom: 32px
             width: 100%
+    .footer
+        &-wrapper
+            &__bottom
+                margin-top: 35px
+        &-list
+            &__product
+                margin-left: 20px
+            &__service
+                margin-left: 20px
+            &__company
+                margin-left: 20px
+            &__yet
+                margin-left: 20px
 
 @media (max-width: 767px)
     .container
@@ -360,6 +373,14 @@
         &-top
             &__icon
                 max-width: 85px
+        &-bottom
+            display: none
+    .footer
+        &-top
+            flex-wrap: wrap
+        &-list
+            &__primary
+                order: 5
         &-bottom
             display: none
 
@@ -797,3 +818,29 @@
             width: 250px
             padding-top: 10px
             padding-bottom: 10px
+    .footer
+        padding-top: 48px
+        padding-bottom: 64px
+        &__span
+            margin-top: 14px
+            text-align: center
+        &__social
+            &-media
+                margin-top: 16px
+        &__title
+            margin-bottom: 20px
+        &-list
+            &__primary
+                display: flex
+                flex-direction: column
+                align-items: center
+            &__product
+                margin-left: 0
+            &__service
+                margin-left: 44px
+            &__company
+                margin-left: 0
+                margin-bottom: 32px
+            &__yet
+                margin-left: 56px
+                margin-bottom: 32px
