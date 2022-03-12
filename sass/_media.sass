@@ -181,13 +181,6 @@
                 margin-bottom: 28px
         &-main
             max-width: 100%
-
-            //&__type
-                font-size: 16px
-                line-height: 20px
-            //&__text
-                font-size: 12px
-                line-height: 24px
             &__img
                 justify-content: start
     .stock
@@ -208,15 +201,14 @@
         &-wrapper
             &__bottom
                 margin-top: 35px
-        &-list
-            &__product
-                margin-left: 20px
-            &__service
-                margin-left: 20px
-            &__company
-                margin-left: 20px
-            &__yet
-                margin-left: 20px
+        &__product
+            margin-left: 20px
+        &__service
+            margin-left: 20px
+        &__company
+            margin-left: 20px
+        &__yet
+            margin-left: 20px
 
 @media (max-width: 767px)
     .container
@@ -378,11 +370,20 @@
     .footer
         &-top
             flex-wrap: wrap
-        &-list
-            &__primary
-                order: 5
+        &__primary
+            order: 5
         &-bottom
             display: none
+        &__company
+            margin-bottom: 30px
+        &__primary
+            display: flex
+            flex-direction: column
+            align-items: center
+            width: 100%
+        &__span
+            text-align: center
+            max-width: 263px
 
 @media (max-width: 576px)
     .container
@@ -823,6 +824,7 @@
         padding-top: 48px
         padding-bottom: 64px
         &-wrapper
+            padding-top: 0
             padding-bottom: 0
             padding-left: 5px
         &__span
@@ -835,22 +837,21 @@
             font-size: 16px
             line-height: 22px
             margin-bottom: 20px
-        &-list
-            &__primary
-                display: flex
-                flex-direction: column
-                align-items: center
-            &__product
-                margin-left: 0
-                margin-bottom: 24px
-            &__service
-                margin-left: 44px
-                margin-bottom: 24px
-            &__company
-                margin-left: 0
-                margin-bottom: 30px
-            &__yet
-                margin-left: 56px
+        &__primary
+            display: flex
+            flex-direction: column
+            align-items: center
+        &__product
+            margin-left: 0
+            margin-bottom: 24px
+        &__service
+            margin-left: 44px
+            margin-bottom: 24px
+        &__company
+            margin-left: 0
+            margin-bottom: 30px
+        &__yet
+            margin-left: 56px
         &__item
             margin-bottom: 15px
         &__link
