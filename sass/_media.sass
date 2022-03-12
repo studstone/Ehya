@@ -793,7 +793,7 @@
             object-fit: cover
         &-wrapper
             padding-right: 0
-            padding-left: 0
+            padding-left: 4px
             border-radius: 0
             background-color: #1565D8
             &::after
@@ -818,9 +818,13 @@
             width: 250px
             padding-top: 10px
             padding-bottom: 10px
+            height: 42px
     .footer
         padding-top: 48px
         padding-bottom: 64px
+        &-wrapper
+            padding-bottom: 0
+            padding-left: 5px
         &__span
             margin-top: 14px
             text-align: center
@@ -828,6 +832,8 @@
             &-media
                 margin-top: 16px
         &__title
+            font-size: 16px
+            line-height: 22px
             margin-bottom: 20px
         &-list
             &__primary
@@ -836,11 +842,17 @@
                 align-items: center
             &__product
                 margin-left: 0
+                margin-bottom: 24px
             &__service
                 margin-left: 44px
+                margin-bottom: 24px
             &__company
                 margin-left: 0
-                margin-bottom: 32px
+                margin-bottom: 30px
             &__yet
                 margin-left: 56px
-                margin-bottom: 32px
+        &__item
+            margin-bottom: 15px
+        &__link
+            font-size: 14px
+            line-height: 20px

@@ -118,25 +118,21 @@ const categorisSlider = new Swiper(".unreleased-swiper", {
 
   breakpoints: {
     576: {
-      spaceBetween: 0,
       slidesPerGroup: 1,
       slidesPerView: 1,
     },
 
     767: {
-      spaceBetween: 10,
       slidesPerGroup: 2,
       slidesPerView: 2,
     },
 
     992: {
-      spaceBetween: 10,
       slidesPerGroup: 3,
       slidesPerView: 3,
     },
 
     1200: {
-      spaceBetween: 30,
       slidesPerGroup: 5,
       slidesPerView: 5,
     },
