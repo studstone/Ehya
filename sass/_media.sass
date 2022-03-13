@@ -1,11 +1,11 @@
 @media (min-width: 991px)
     .button
         &:hover
-            background-color: #5f77e2
+            background-color: #b7c4fd
 
     a
         &:hover
-            color: #889cf5
+            color: #0023bd
 
     .book
         &-button
@@ -17,12 +17,12 @@
         &-recommendations
             &__link
                 &:hover
-                    background-color: #5f77e2
+                    background-color: #9baeff
                     object-fit: cover
     .blog
         &__link
             &:hover
-                background-color: #5f77e2
+                background-color: #9baeff
 
     .categories
         &-wrapper
@@ -80,6 +80,13 @@
     .stock
         &-wrapper
             padding: 60px 5px 80px 5px
+    .unreleased
+        &-slide
+            max-width: 204px
+            height: 298px
+            &__img
+                max-width: 204px
+                height: 298px
 
 @media (max-width: 992px)
     .container
@@ -92,9 +99,9 @@
         &-description
             max-width: 100%
 
-            &__title
-                width: 443px
-                height: 180px
+            //&__title
+                //width: 443px
+               // height: 180px
 
             &__title
                 margin-top: 0
@@ -172,7 +179,7 @@
 
     .categories
         &-slide
-            max-width: 330px
+            max-width: 280px
     .blog
         &-info
             flex-direction: column
@@ -279,6 +286,15 @@
     .book
         padding-top: 36px
         padding-bottom: 56.21px
+        &-description
+            &__title
+                padding-left: 10px
+                &--yellow
+                    padding-left: 0
+            &__book-name
+                padding-left: 10px
+            &__text
+                padding-left: 10px
 
     .goods
         &__title
@@ -345,9 +361,22 @@
                     width: 270px
 
     .categories
-        padding-bottom: 59px
-        &-slide
-            max-width: 280px
+        padding-bottom: 60px
+        &-container
+            min-height: 462px
+
+            &__button
+                top: 77%
+                width: 48px
+                height: 48px
+
+                &--next
+                    right: 173px
+                    background-image: url(../image/arrow-right.svg)
+
+                &--prev
+                    left: 173px
+                    background-image: url(../image/arrow-left.svg)
 
         &-wrapper
             &__item
@@ -384,6 +413,10 @@
         &__span
             text-align: center
             max-width: 263px
+    .unreleased
+        &-swiper
+            &__title
+                padding-left: 10px
 
 @media (max-width: 576px)
     .container
@@ -400,6 +433,7 @@
                 letter-spacing: 0.2px
                 width: 280px
                 height: 160px
+                padding-left: 0
 
             &__book
                 &-name
@@ -411,6 +445,7 @@
                     margin-bottom: 32px
                     text-align: center
                     width: 100%
+                    padding-left: 0
 
             &__text
                 font-style: normal
@@ -419,6 +454,7 @@
                 line-height: 23px
                 text-align: center
                 margin-bottom: 17px
+                padding-left: 0
 
         &-button
             width: 176px
@@ -450,7 +486,8 @@
             margin-top: 36px
 
     .popup
-        padding: 15px 10px
+        padding: 35px 10px
+        width: 280px
 
     .goods
         padding-bottom: 49px
@@ -569,18 +606,19 @@
                 font-size: 18px
                 line-height: 25px
                 text-align: center
+                margin-bottom: 36px
 
         &-video
             min-height: 486px
 
             &__item
                 width: 140px
-                height: 230px
-                margin: 0
+                margin-top: 0
 
                 &--big
                     width: 100%
                     height: 210px
+                    margin-top: 0
 
             &__player
                 &--litle
@@ -590,8 +628,9 @@
             &__info
                 flex-direction: column
                 align-items: center
-                margin-top: 10px
-
+                margin-top: 17px
+            &__name
+                margin-top: 0
             &__author
                 font-style: normal
                 font-weight: 500
@@ -599,6 +638,7 @@
                 line-height: 20px
                 text-align: center
                 letter-spacing: 0.2px
+                margin-top: 0px
 
             &__type
                 font-style: normal
@@ -607,29 +647,13 @@
                 line-height: 20px
                 text-align: center
                 color: #5A7184
+                margin-top: 7px
                 margin-bottom: 16px
 
             &__icon
                 width: 10px
                 height: 14px
-
-    .categories
-        padding-bottom: 60px
-        &-container
-            min-height: 462px
-
-            &__button
-                top: 105%
-                width: 48px
-                height: 48px
-
-                &--next
-                    right: 83px
-                    background-image: url(../image/arrow-right.svg)
-
-                &--prev
-                    left: 83px
-                    background-image: url(../image/arrow-left.svg)
+                margin-top: 0
 
         &__line
             margin-bottom: 55px
@@ -727,10 +751,12 @@
             &__type
                 font-size: 16px
                 line-height: 20px
+                padding-left: 0
             &__text
                 font-size: 12px
                 line-height: 24px
                 margin-top: 12px
+                padding-left: 0
             &__icon
                 width: 280px
                 height: 120px
@@ -780,6 +806,7 @@
                 line-height: 37px
                 text-align: center
                 margin-bottom: 36px
+                padding-left: 0
             &__button
                 top: 441px
                 &--prev
@@ -787,6 +814,9 @@
                     
                 &--next
                     right: 146px
+        &-slide
+            max-width: 280px
+            height: 300px
     .stock
         &-container
             max-width: 100%
@@ -857,3 +887,20 @@
         &__link
             font-size: 14px
             line-height: 20px
+    .categories
+        padding-bottom: 60px
+        &-container
+            min-height: 462px
+
+            &__button
+                top: 105%
+                width: 48px
+                height: 48px
+
+                &--next
+                    right: 83px
+                    background-image: url(../image/arrow-right.svg)
+
+                &--prev
+                    left: 83px
+                    background-image: url(../image/arrow-left.svg)

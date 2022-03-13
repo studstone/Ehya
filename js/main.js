@@ -59,6 +59,10 @@ $(document).ready(function () {
       $(this).toggleClass("goods-card__svg--red");
     });
   });
+
+  $input.on("#phone", function () {
+    this.value = Math.min(10, Math.max(10, this.value));
+  });
 });
 
 let selector = document.querySelectorAll('input[type="tel"]');
@@ -118,21 +122,30 @@ const categorisSlider = new Swiper(".unreleased-swiper", {
 
   breakpoints: {
     576: {
+      spaceBetween: 0,
       slidesPerGroup: 1,
       slidesPerView: 1,
     },
 
     767: {
-      slidesPerGroup: 2,
-      slidesPerView: 2,
+      spaceBetween: 10,
+      slidesPerGroup: 3,
+      slidesPerView: 3,
     },
 
     992: {
+      spaceBetween: 30,
       slidesPerGroup: 3,
       slidesPerView: 3,
     },
 
     1200: {
+      spaceBetween: 35,
+      slidesPerGroup: 4,
+      slidesPerView: 4,
+    },
+    1201: {
+      spaceBetween: 30,
       slidesPerGroup: 5,
       slidesPerView: 5,
     },
