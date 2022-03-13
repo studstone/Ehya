@@ -133,24 +133,24 @@ const categorisSlider = new Swiper(".unreleased-swiper", {
 
     767: {
       spaceBetween: 10,
-      slidesPerGroup: 3,
+      slidesPerGroup: 1,
       slidesPerView: 3,
     },
 
     992: {
       spaceBetween: 10,
-      slidesPerGroup: 3,
+      slidesPerGroup: 1,
       slidesPerView: 3,
     },
 
     1200: {
       spaceBetween: 30,
-      slidesPerGroup: 4,
+      slidesPerGroup: 1,
       slidesPerView: 4,
     },
     1201: {
       spaceBetween: 30,
-      slidesPerGroup: 5,
+      slidesPerGroup: 1,
       slidesPerView: 5,
     },
   },
