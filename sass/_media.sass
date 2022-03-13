@@ -82,7 +82,7 @@
             padding: 60px 5px 80px 5px
     .unreleased
         &-slide
-            max-width: 204px
+            max-width: 235px
             height: 298px
             &__img
                 max-width: 204px
@@ -177,9 +177,9 @@
                 &--litle
                     width: 340px
 
-    .categories
-        &-slide
-            max-width: 280px
+    //.categories
+        //&-slide
+            //max-width: 280px
     .blog
         &-info
             flex-direction: column
@@ -363,10 +363,10 @@
     .categories
         padding-bottom: 60px
         &-container
-            min-height: 462px
+            //min-height: 462px
 
             &__button
-                top: 77%
+                top: 109%
                 width: 48px
                 height: 48px
 
@@ -417,6 +417,8 @@
         &-swiper
             &__title
                 padding-left: 10px
+        &-slide
+            max-width: 100%
 
 @media (max-width: 576px)
     .container
@@ -890,10 +892,10 @@
     .categories
         padding-bottom: 60px
         &-container
-            min-height: 462px
+            //min-height: 462px
 
             &__button
-                top: 105%
+                top: 114%
                 width: 48px
                 height: 48px
 
@@ -904,3 +906,17 @@
                 &--prev
                     left: 83px
                     background-image: url(../image/arrow-left.svg)
+        &-slide
+            &__title
+                font-family: "Roboto Condensed", sans-sarif
+                font-style: normal
+                font-weight: 700
+                font-size: 16px
+                line-height: 20px
+                margin-top: 16px
+                margin-bottom: 10px
+                &--smoll
+                    width: 65px
+            &__type
+                font-size: 12px
+                line-height: 20px

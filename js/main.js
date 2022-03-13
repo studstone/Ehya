@@ -73,8 +73,8 @@ const swiper = new Swiper(".categories-swiper", {
   //loop: false,
 
   navigation: {
-    nextEl: ".categories-container__button--prev",
-    prevEl: ".categories-container__button--next",
+    nextEl: ".categories-container__button--next",
+    prevEl: ".categories-container__button--prev",
     disabledClass: "disabled-swiper__button",
   },
   keyboard: {
@@ -84,24 +84,28 @@ const swiper = new Swiper(".categories-swiper", {
   },
 
   breakpoints: {
-    576: {
+    577: {
+      spaceBetween: 10,
       slidesPerView: 2,
       slidesPerGroup: 2,
     },
 
-    767: {
+    768: {
+      spaceBetween: 10,
       slidesPerView: 2,
       slidesPerGroup: 2,
     },
 
-    992: {
-      slidesPerGroup: 4,
-      slidesPerView: 2,
-    },
-
-    1200: {
+    991: {
+      spaceBetween: 10,
       slidesPerGroup: 3,
       slidesPerView: 3,
+    },
+
+    1201: {
+      spaceBetween: 26,
+      slidesPerGroup: 4,
+      slidesPerView: 4,
     },
   },
 });
@@ -134,13 +138,13 @@ const categorisSlider = new Swiper(".unreleased-swiper", {
     },
 
     992: {
-      spaceBetween: 30,
+      spaceBetween: 10,
       slidesPerGroup: 3,
       slidesPerView: 3,
     },
 
     1200: {
-      spaceBetween: 35,
+      spaceBetween: 30,
       slidesPerGroup: 4,
       slidesPerView: 4,
     },
