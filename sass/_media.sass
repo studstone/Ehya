@@ -79,7 +79,7 @@
             max-width: 380px
     .stock
         &-wrapper
-            padding: 60px 5px 80px 5px
+            padding: 60px 15px 80px 15px
     .unreleased
         &-slide
             max-width: 235px
@@ -87,7 +87,13 @@
             &__img
                 max-width: 204px
                 height: 298px
-
+    .categories
+        &-container
+            &__button
+                &--next
+                    right: -10px
+                &--prev
+                    left: -10px
 @media (max-width: 992px)
     .container
         max-width: 700px
@@ -220,6 +226,7 @@
 @media (max-width: 767px)
     .container
         max-width: 576px
+        padding: 0 15px 15px
 
     body
         padding-top: 64px
@@ -423,6 +430,7 @@
 @media (max-width: 576px)
     .container
         max-width: 280px
+        padding: 0
 
     .book
         &-description
